@@ -1,10 +1,15 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-registration',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'registration-form';
+export class RegistrationComponent {
+  formData: any = {};
+
+  onSubmit() {
+    // Handle form submission here, e.g., send data to a server or perform other actions
+    console.log(this.formData);
+  }
 }
